@@ -58,9 +58,9 @@ courseRoster.directive("welcometext", function() {
 
 courseRoster.directive("samplecourse", function() {
   return {
+    scope:{
+      coursename:"@"
+    },
     template: "<div>{{coursename}}</div>",
-    link: function (scope) {
-      scope.coursename = "Intro to Psych";
-    }
   }
 });

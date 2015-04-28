@@ -3,7 +3,8 @@
 
       <div ng-app="courseRoster">
           <div ng-controller='CoursesCtrl'>
-              <li samplecourse></li>
+              <input type="text" ng-model="ctrlCourse">
+              <li samplecourse coursename="{{ctrlCourse}}"></li>
           </div>
       </div>
     <!-- <li ng-repeat="item in courses">

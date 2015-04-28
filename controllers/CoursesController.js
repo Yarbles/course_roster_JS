@@ -3,4 +3,5 @@ courseRoster.controller('CoursesCtrl', function CoursesCtrl($scope, CoursesFacto
   $scope.CoursesFactory = CoursesFactory;
   var app = this;
   app.message = "hello";
+  $scope.ctrlCourse = "Intro to Gender Studies";
 });
