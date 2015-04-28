@@ -1,17 +1,24 @@
 <div ng-show="courses.length">
   <h1>Here are all of your courses:</h1>
-  <ul>
-    <li ng-repeat="item in courses">
+
+      <div ng-app="courseRoster">
+          <div ng-controller='CoursesCtrl'>
+              <li samplecourse></li>
+          </div>
+      </div>
+    <!-- <li ng-repeat="item in courses">
       <a ui-sref="courses.students({ courseId: item.id })"> {{ item.name }}</a>
-    </li>
-  </ul>
+    </li> -->
+
 </div>
 
 <div class="col-md-4">
   <h3>Add a new course</h3>
-  <div ng-app="welcometext">
+  <!-- <div ng-app="welcometext">
       <welcometext></welcometext>
-  </div>
+  </div> -->
+
+
   <div ng-app="courseRoster" ng-controller="CoursesCtrl as app">
   <form ng-submit="CoursesFactory.addCourse()" class="form-inline" role="form">
     <div class="form-group">
