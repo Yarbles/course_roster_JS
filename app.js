@@ -47,9 +47,11 @@ courseRoster.directive("leave", function () {
     }
 });
 
-// courseRoster.directive("welcometext", function() {
-//   return {
-//      restrict: "E",
-//      template: "<div>Welcome!</div>"
-//   }
-//   });
+courseRoster.directive("welcometext", function() {
+  return {
+     restrict: "E",
+     link: function () {
+         alert("I hope this makes sense.")
+     }
+  }
+  });
