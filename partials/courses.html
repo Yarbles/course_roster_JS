@@ -9,11 +9,15 @@
 
 <div class="col-md-4">
   <h3>Add a new course</h3>
+  <!-- <div ng-app="welcometext">
+      <welcometext></welcometext>
+  </div> -->
+  <div ng-app="courseRoster" ng-controller="CoursesCtrl as app">
   <form ng-submit="CoursesFactory.addCourse()" class="form-inline" role="form">
     <div class="form-group">
       <input type="text" ng-model="CoursesFactory.courseName" class="form-control" placeholder="Enter a course name">
     </div>
-    <button type="submit" class="btn btn-success">Submit</button>
+    <button enter="btn btn-info" leave="btn btn-info" type="submit" >Submit</button>
   </form>
 </div>
 
